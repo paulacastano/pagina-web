@@ -1,304 +1,347 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* Importa la fuente 'Poppins' desde Google Fonts con diferentes pesos (300, 400, 600) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
+/* Aplicamos estilos globales a todos los elementos de la página */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
+/* Estilos generales para el cuerpo de la página */
 body {
-    background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
 }
 
+/* Estilos para la cabecera de la página */
 header {
-    background: #f8f8f9;
-    padding: 15px 0;
+  background: #f8f8f9;
+  padding: 15px 0;
 }
 
+/* Estilos para la barra de navegación */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
+  display: flex; /* Usa flexbox para organizar los elementos en una fila */
+  justify-content: space-between; /* Distribuye los elementos de la nav a los extremos */
+  align-items: center; /* Centra los elementos verticalmente */
+  max-width: 1100px; /* Define un ancho máximo para evitar que se expanda demasiado */
+  margin: auto; /* Centra la barra de navegación horizontalmente */
+  padding: 0 20px; /* Agrega espacio a los lados para evitar que los elementos toquen los bordes */
 }
 
+/* Estilos para el logo */
 .logo {
-    font-size: 30px;
-    font-weight: 800;
-    color: rgb(21, 21, 21);
+  font-size: 30px;
+  font-weight: 800;
+  color: rgb(21, 21, 21);
 }
 
+/* Estilos para la lista de navegación */
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
+/* Estilos para los enlaces dentro de la lista de navegación */
 nav ul li a {
-    text-decoration: none;
-    color: rgb(3, 3, 3);
-    font-weight: 500;
-    transition: color 0.3s;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: rgb(3, 3, 3);
+  font-weight: 500;
+  transition: color 0.3s; /* Agrega una transición suave al cambiar de color */
 }
 
+/* Estilos para el efecto hover en los enlaces de navegación */
 nav ul li a:hover {
-    color: #00aaff;
+  color: #00aaff;
 }
 
+/* Sección hero (sección principal destacada) */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    text-align: center;
-    background: #f4f6f8;
-    color: rgb(0, 0, 0);
-    flex-wrap: wrap;
+  display: flex; /* Usa flexbox para organizar los elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  padding: 50px; /* Añade espacio alrededor del contenido */
+  text-align: center; /* Asegura que el texto dentro esté centrado */
+  background: #f4f6f8; /* Color de fondo claro */
+  color: rgb(0, 0, 0); /* Color del texto en negro */
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si es necesario */
 }
 
+/* Estilos para el texto dentro de la sección hero */
 .hero-text {
-    max-width: 500px;
-    text-align: left;
-
+  max-width: 500px;
+  text-align: left;
 }
 
+/* Estilos para los títulos dentro de .hero-text */
 .hero-text h1 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
+/* Clase para resaltar texto */
 .highlight {
-    color: #00aaff;
-    font-weight: bold;
+  color: #00aaff;
+  font-weight: bold;
 }
 
+/* Estilos para la imagen dentro de la sección hero */
 .hero-image img {
-    width: 250px;
-    border-radius: 50%;
-    margin-top: 20px;
+  width: 250px;
+  border-radius: 50%;
+  margin-top: 20px;
 }
 
+/* Contenedor de botones */
 .botones {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
 }
 
+/* Estilos generales para los botones */
 button {
-    background: #00aaff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
+  background: #00aaff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
+/* Efecto hover para los botones */
 button:hover {
-    background: #ffffff;
+  background: #ffffff;
 }
 
+/* Sección de servicios */
 .services {
-    text-align: center;
-    padding: 40px 20px;
+  text-align: center; /* Centra el texto dentro de la sección */
+  padding: 40px 20px; /* Espaciado interno para mejorar la distribución del contenido */
 }
 
+/* Estilos para el título dentro de la sección de servicios */
 .services h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
 }
 
+/* Contenedor flexible para organizar los servicios */
 .services-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 20px; /* Espaciado entre los servicios */
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
+/* Estilos individuales para cada servicio */
 .service {
-    background: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    transition: transform 0.3s ease-in-out;
+  background: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Efecto hover en cada servicio */
 .service:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
+/* Iconos dentro de cada servicio */
 .service i {
-    font-size: 40px;
-    color: #007bff;
-    margin-bottom: 10px;
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
 }
 
+/* Títulos de los servicios */
 .service h3 {
-    margin: 10px 0;
-    font-size: 1.5rem;
+  margin: 10px 0;
+  font-size: 1.5rem;
 }
 
+/* Descripción de los servicios */
 .service p {
-    font-size: 1rem;
-    color: #666;
+  font-size: 1rem;
+  color: #666;
 }
 
+/* Sección "Acerca de" */
 .about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 10%;
-    background: linear-gradient(to right, #fdfbfb, #ebedee);
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  border-radius: 10px;
 }
 
+/* Contenedor de texto dentro de "Acerca de" */
 .about-text {
-    flex: 1;
+  flex: 1;
 }
 
+/* Título dentro de la sección "Acerca de" */
 .about-text h2 {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
 }
 
+/* Estilos para el título secundario en la sección "Acerca de" */
 .about-text h3 {
-    font-size: 1.5em;
-    color: #666;
-    margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 20px;
 }
 
+/* Estilos para el párrafo en la sección "Acerca de" */
 .about-text p {
-    font-size: 1.1em;
-    color: #444;
-    line-height: 1.6;
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.6;
 }
 
+/* Íconos de redes sociales */
 .social-icons a {
-    display: inline-block;
-    font-size: 1.8em;
-    margin-right: 15px;
-    color: #0077b5;
-    transition: transform 0.3s ease;
+  display: inline-block;
+  font-size: 1.8em;
+  margin-right: 15px;
+  color: #0077b5;
+  transition: transform 0.3s ease;
 }
 
+/* Efecto hover en los íconos de redes sociales */
 .social-icons a:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
+/* Botón de acción */
 .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 20px;
-    background: #0077b5;
-    color: #fff;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #0077b5;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
+/* Cambio de color en el botón al pasar el cursor */
 .btn:hover {
-    background: #005a8e;
+  background: #005a8e;
 }
 
+/* Contenedor de la imagen en "Acerca de" */
 .about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 40%;
-    margin-left: 40px;
-    /* 🔹 Separa la imagen del texto */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 40%;
+  margin-left: 40px;
+  /* 🔹 Separa la imagen del texto */
 }
 
+/* Imagen dentro de la sección "Acerca de" */
 .about-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Contenedor de la sección de habilidades */
 .skills {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fdfbfb;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fdfbfb;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
+/* Título de la sección de habilidades */
 .skills h2 {
-    font-size: 1.3em;
-    margin-bottom: 20px;
-    color: #333;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: #333;
 }
 
+/* Elemento individual de habilidad */
 .skill {
-    margin-bottom: 15px;
-    text-align: left;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
+/* Texto dentro de cada barra de progreso */
 .skill span {
-    font-size: 1.0em;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
+  font-size: 1em;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
 }
-
+/* Contenedor de la barra de progreso */
 .progress {
-    width: 100%;
-    background: #eee;
-    height: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  background: #eee;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
 }
 
+/* Barra de progreso animada */
 .bar {
-    height: 100%;
-    transition: width 1s ease-in-out;
+  height: 100%;
+  transition: width 1s ease-in-out;
 }
 
+/* Barra de progreso para HTML */
 .bar.html {
-    background: linear-gradient(90deg, #ff8a00, #e52e71);
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
 }
-
+/* Barra de progreso para JavaScript */
 .bar.js {
-    background: linear-gradient(90deg, #f7df1e, #ffa500);
+  background: linear-gradient(90deg, #f7df1e, #ffa500);
 }
-
+/* Barra de progreso para UI/UX */
 .bar.ui {
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
 }
 
+/* Media queries para pantallas pequeñas */
 @media (max-width: 768px) {
-    .skills {
-        max-width: 90%;
-    }
+  .skills {
+    max-width: 90%; /* Se adapta al ancho de la pantalla */
+  }
 }
 
+/* Media queries para hacer la web más responsiva */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
+  nav {
+    flex-direction: column; /* Cambia la disposición del menú a vertical */
+  }
 
-    .hero {
-        flex-direction: column;
-    }
+  .hero {
+    flex-direction: column; /* Alinea los elementos en columna */
+  }
 
-    .about {
-        flex-direction: column;
-    }
+  .about {
+    flex-direction: column; /* Asegura que el texto y la imagen se apilen */
+  }
 }
